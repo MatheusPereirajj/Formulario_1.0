@@ -6,10 +6,12 @@ div{
     margin-bottom: 10px;
 }
 
-div input,
-label{
-    /* display: block; */
-}
 .personal_data_main{
     display: inline-block; 
+}
+
+.level_job,
+.personal_data_main,
+.email{
+    font-weight: bold;
 }
