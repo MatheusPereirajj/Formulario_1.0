@@ -8,70 +8,100 @@
 </head>
 <body>
     <header>
-        <!-- parágrafo principal -->
-        <div class="paragraph-main">
-            <h1>Cadastro de DEVs</h1>
-            <p>complete suas informações</p>
-        </div>
-        <!-- princiais informações pessoais -->
-        <div class="personal_data_main">
-            <label for="name">Nome</label>
-            <input type="text" name="Nome" >
+        <form>   
+            <!-- parágrafo principal -->
+            <div>
+                <h1>Cadastro de DEVs</h1>
+                <p>complete suas informações</p>
+            </div>
+        
+            <form> 
+            <!-- princiais informações pessoais -->
+            <div class="personal_data_main">
+                <label for="name">Nome</label>
+                <input type="text" name="Nome" >
             
-            <label for="surname">Sobrenome</label>
-            <input type="text" name="Sobrenome">
-        </div>
-        <!-- email da pessoa -->
-        <div class="email">
-            <label for="email">E-mail</label>
-            <input type="email" name="email">
-        </div>
-        <!-- Funções dos DEVs -->
-        <div>
-            <label for="profission">De qual lado da aplicação você desenvolve?</label>
-            
-            <div class="radio">
-                <input type="radio" value="Font-End" name="profission" checked="yes">
-                <label for="Font-End">Front-End</label>
-                <br>
-                <input type="radio" value="Back-End" name="profission">
-                <label for="Back-End">Back-End</label>
-                <br>
-                <input type="radio" value="Fullstack" name="profission">
-                <label for="Fullstack">Fullstack</label>
-                <br>
-            </div> 
-        </div>
-        <!-- senioridade -->
-        <div class="level_job">
-            <label for="level_job">Senioridade</label>
-            <select name="level_job">
-                <option value=""></option>
-                <option value="junior"> Júnior</option>
-                <option value="pleno"> Pleno</option>
-                <option value="senior">Sênior</option>
-            </select>
-        </div>
+                <label for="surname">Sobrenome</label>
+                <input type="text" name="Sobrenome">
+            </div>
+        
+            <!-- email da pessoa -->
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="email" name="email">
+            </div>
+        
+            <!-- Funções dos DEVs -->
+            <div>
+                <label><b>De qual lado da aplicação você desenvolve?</b></label>
+                <div class="language">
 
-        <!-- comandos que o DEV utiliza. -->
-        <label for="comanddev">Selecione as tecnologias que utiliza:</label>
-        <div class="radio">
-            <input type="checkbox" name="comanddev[]" value="HTML">
-            <label for="HTML">HTML</label>
-        </div>
-               <div class="radio">
-            <input type="checkbox" name="comanddev[]" value="JavaScript">
-            <label for="JavaScript">JavaScript</label>
-        </div>
-        <div class="radio">
-            <input type="checkbox" name="comanddev[]" value="PHP">
-            <label for="PHP">PHP</label>
-        </div>
-        <div class="radio">
-            <input type="checkbox" name="comanddev[]" value="C#">
-            <label for="C#">C#</label>
-        </div>
-             
+                    <input type="radio" value="Font-End" name="language" checked="yes">
+                    <label for="Font-End">Front-End</label>
+                    <br>
+
+                    <input type="radio" value="Back-End" name="language">
+                    <label for="Back-End">Back-End</label>
+                    <br>
+
+                    <input type="radio" value="Fullstack" name="language">
+                    <label for="Fullstack">Fullstack</label>
+                    <br>
+                </div> 
+            </div>
+        
+            <!-- senioridade -->
+            <div class="level-job">
+                <label for="level_job"><B>Senioridade</B></label>
+                <select name="level_job">
+                    <option value=""></option>
+                    <option value="junior"> Júnior</option>
+                    <option value="pleno"> Pleno</option>
+                    <option value="senior">Sênior</option>
+                </select>
+            </div>
+
+            <!-- comandos que o DEV utiliza. -->
+            <label for="comand-dev"><b>Selecione as tecnologias que utiliza:</b></label>
+            <div class="comand-dev">
+                <input type="checkbox" name="comanddev[]" value="HTML">
+                <label for="HTML">HTML</label>
+        
+               
+                <input type="checkbox" name="comanddev[]" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+      
+        
+                <input type="checkbox" name="comanddev[]" value="PHP">
+                <label for="PHP">PHP    </label>
+        
+       
+                <input type="checkbox" name="comanddev[]" value="C#">
+                <label for="C#">C#</label>
+            
+                <input type="checkbox" name="comanddev[]" value="Python">
+                <label for="Python">Python</label>
+            
+                <input type="checkbox" name="comanddev[]" value="Java">
+                <label for="Java">Java</label>
+            </div>
+
+            <div class="comment">
+                <label for="comment"><b>Conte um pouco sobre sua experiência como DEV:</b></label>
+                <textarea name="comment"></textarea>
+            </div>
+
+        
+
+
+            <div class="bottom"></div>
+                <!-- Envio de forms -->
+                <input type="submit" value="Enviar">
+
+                <!-- resetar forms -->
+                <input type="reset" value="Limpar">
+            </div>
+        </form>     
     </header>
 
     

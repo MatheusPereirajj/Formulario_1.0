@@ -1,17 +1,20 @@
 body{
     padding-bottom: 400px;
-}
-
-div{
     margin-bottom: 10px;
 }
 
-.personal_data_main{
-    display: inline-block; 
+div input,
+label{
+    margin-bottom: 10px;
 }
 
-.level_job,
+
 .personal_data_main,
 .email{
     font-weight: bold;
+}
+
+.comment{
+    display:block;
+    
 }
